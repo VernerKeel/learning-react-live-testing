@@ -1,9 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-
-//const Data = loadable(() => import("../components/Data"))
-
-//import Data from "../components/Data"
+import loadable from "@loadable/component"
+const Data = loadable(() => import("../components/Data"))
 
 // Dig deeper on how hooks work perfomance wise:
 //https://hackernoon.com/adventuring-into-react-hooks-performance-practices-rly36xq
