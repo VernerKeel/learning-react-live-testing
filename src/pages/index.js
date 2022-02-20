@@ -14,7 +14,7 @@ import React, { useEffect } from "react"
 // data structure -> can I defer or conditionally not load it by using loadable?
 
 const HomePage = () => {
-  const yo = useEffect(() => React.lazy(() => import("../components/Data")))
+  // const yo = useEffect(() => React.lazy(() => import("../components/Data")))
   return (
     <div>
       <p>Hello world!</p>
