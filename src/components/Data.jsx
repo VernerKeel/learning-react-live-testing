@@ -2,10 +2,11 @@ import React from "react"
 //import useAdviceData from "../hooks/useAdviceData"
 //import useStudyData from "../hooks/useStudyData"
 
-import loadable from "@loadable/component"
+//import loadable from "@loadable/component"
 //Test
-const useAdviceData = loadable(() => import("../hooks/useAdviceData"))
-const useStudyData = loadable(() => import("../hooks/useStudyData"))
+const useAdviceData = React.lazy(() => import("../hooks/useAdviceData"))
+const useStudyData = React.lazy(() => import("../hooks/useStudyData"))
+
 
 const Data = () => {
   return (

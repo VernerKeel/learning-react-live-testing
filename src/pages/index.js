@@ -7,7 +7,7 @@ import React, {useEffect} from "react"
 
 //const Data = loadable(() => import("../components/Data"))
 //const Data = setTimeout(() => React.lazy(() => import("../components/Data"))[5000])
-const yo = useEffect(() => React.lazy(() => import("../components/Data"))[5000]) 
+const yo = React.lazy(() => import("../components/Data"))
 // Dig deeper on how hooks work perfomance wise:
 //https://hackernoon.com/adventuring-into-react-hooks-performance-practices-rly36xq
 
