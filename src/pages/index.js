@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 
 // https://bundlephobia.com/ --> a creat tool to find out how much kb a package adds to your bundle
 
@@ -7,7 +7,7 @@ import React from "react"
 
 //const Data = loadable(() => import("../components/Data"))
 //const Data = setTimeout(() => React.lazy(() => import("../components/Data"))[5000])
-const yo = React.lazy(() => import("../components/Data"))
+const yo = useEffect(() =>  React.lazy(() => import("../components/Data")))
 // Dig deeper on how hooks work perfomance wise:
 //https://hackernoon.com/adventuring-into-react-hooks-performance-practices-rly36xq
 
