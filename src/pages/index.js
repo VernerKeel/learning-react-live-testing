@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 
 // https://bundlephobia.com/ --> a creat tool to find out how much kb a package adds to your bundle
 
