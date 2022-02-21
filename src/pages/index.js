@@ -11,24 +11,24 @@ const HomePage = () => {
   const pages = [
     {
       title: `useRef`,
-      link: `/use-ref`,
+      link: `hooks/use-ref`,
     },
     {
       title: `useContext`,
-      link: `/use-context`,
+      link: `hooks/use-context`,
     },
     {
       title: `useEffect`,
-      link: `/use-effect`,
+      link: `hooks/use-effect`,
     },
 
     {
       title: `useLayoutEffect`,
-      link: `/use-layout-effect`,
+      link: `hooks/use-layout-effect`,
     },
     {
       title: `useReducer`,
-      link: `/use-reducer`,
+      link: `hooks/use-reducer`,
     },
   ]
   return (
