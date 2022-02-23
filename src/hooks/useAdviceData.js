@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const useAdviceData = () => {
   const { advice } = useStaticQuery(graphql`
     query adviceQuery {
-      allContentfulAdvice {
+      advice: allContentfulAdvice {
         nodes {
           metaData: seoMetadata {
             metaTitle
@@ -37,6 +37,9 @@ const useAdviceData = () => {
           tag {
             id
             name
+            serviceImage {
+              ...Img25Props
+            }
             category {
               id
               name
@@ -139,7 +142,8 @@ const useAdviceData = () => {
       }
     }
   `)
-  return [advice]
+  console.log(advice.nodes)
+  return [advice.nodes]
 }
 
 export default useAdviceData

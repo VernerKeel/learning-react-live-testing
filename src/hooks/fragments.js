@@ -28,8 +28,9 @@ export const img25Fragment = graphql`
     }
   }
 `
-export const imgData25Fragment = graphql`
-  fragment ImgData25 on ContentfulAsset {
+export const img25PropsFragment = graphql`
+  fragment Img25Props on ContentfulAsset {
+    id
     alt: title
     gatsbyImageData(placeholder: BLURRED, formats: AUTO, quality: 25)
   }
